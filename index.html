@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciberseguridad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #AEC6CF;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #3A6073;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2C5364;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #AEC6CF;
+            color: #333;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #3A6073;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡Bienvenidos al Mundo de la Ciberseguridad!</h1>
+    </header>
+    <nav>
+        <a href="consejos.html">Consejos</a>
+        <a href="amenazas.html">Amenazas</a>
+        <a href="identificacion.html">Identificación</a>
+        <a href="test.html">Test</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <main>
+        <h2>¿Qué es la Ciberseguridad?</h2>
+        <p>La ciberseguridad es el conjunto de prácticas y tecnologías diseñadas para proteger sistemas, redes y datos de accesos no autorizados y ciberataques. La ciberseguridad es la práctica de proteger equipos, redes, aplicaciones de software, sistemas críticos y datos de posibles amenazas digitales.
+        </p>
+         <table width="100%">
+        <tr>
+            <!-- Celda de texto a la izquierda -->
+            <td class="image-card">
+                 <img src="D:\CIBERSEGURIDAD\segurito.jpeg" alt="Ciberseguridad">  
+            </td>
+            <td class="text-cell">
+                  <p>
+                <h2> ¿Cuál es el objetivo? </h2>
+                      <br>
+                      El objetivo de la ciberseguridad es garantizar el almacenamiento seguro, controlar el acceso 
+                      <br>
+                      y evitar el procesamiento, la transferencia o la eliminación no autorizados de datos.
+                      <br>
+                      <br>
+                      Tiene como función proteger de ataques maliciosos a ordenadores, dispositivos móviles, servidores, 
+                      <br>
+                      sistemas electrónicos, redes y datos. La mejor manera de tener protegida toda la información y datos de tu empresa es a través de servicios de ciberseguridad.
+                </p>
+    </main>
+<script>
+    const header = document.querySelector("header h1");
+    header.style.opacity = "0";
+    header.style.transition = "opacity 2s";
+
+    window.addEventListener("load", () => {
+        header.style.opacity = "1";
+    });
+</script>
+    <script>
+        // Si quieres aplicar las clases fade-in dinámicamente a las imágenes:
+        const images = document.querySelectorAll('.fade-in');
+        images.forEach((img, index) => {
+            img.style.animationDelay = `${index * 0.5}s`;
+        });
+    </script>
+</body>
+</html>

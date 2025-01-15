@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<body>
+    <script>
+        function createEmoji() {
+            const emoji = document.createElement("div");
+            emoji.textContent = "💻"; // Emoji de computadora
+            emoji.className = "emoji";
+
+            // Posición aleatoria en la pantalla
+            const xPosition = Math.random() * window.innerWidth;
+            const yPosition = window.innerHeight;
+
+            emoji.style.left = `${xPosition}px`;
+            emoji.style.top = `${yPosition}px`;
+            emoji.style.fontSize = `${Math.random() * 20 + 30}px`; // Tamaño entre 30px y 50px
+
+            document.body.appendChild(emoji);
+
+            // Elimina el emoji después de 4 segundos
+            setTimeout(() => emoji.remove(), 4000);
+        }
+
+        // Crear emojis periódicamente
+        setInterval(createEmoji, 500);
+    </script>
+</body>
+</html>

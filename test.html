@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Seguridad Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #AEC6CF;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #5D9CEC;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #41729F;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            max-width: 400px;
+        }
+        footer {
+            background-color: #5D9CEC;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Test de Seguridad Personal</h1>
+    </header>
+    <nav>
+        <a href="ciberseguridad.html">Inicio</a>
+        <a href="consejos.html">Consejos</a>
+        <a href="amenazas.html">Amenazas</a>
+        <a href="identificacion.html">Identificación</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <section id="test">
+        <h2>Veamos si podrías estar en riesgo, responde estas preguntas!</h2>
+<br>
+<center>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdE8P9CTpZNG4hxHxUiVIF2kR0axwHoJMRH2vI_tIASFx5cXQ/viewform?embedded=true" width="640" height="1367" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+</center>
+        <br>
+        <center>
+        <p><h3> Si tu respuesta fue “Sí” a alguna de estas preguntas, podrías estar en riesgo de un ataque cibernético. Es recomendable tomar medidas de protección inmediatamente!!</h3></p>
+        </center>
+      </section>
+<footer>
+<p>SeguiridadDigital.mx</p>
+</footer>
+<script>
+    const header = document.querySelector("header h1");
+    header.style.opacity = "0";
+    header.style.transition = "opacity 2s";
+
+    window.addEventListener("load", () => {
+        header.style.opacity = "1";
+    });
+</script>
+</body>
+</html>

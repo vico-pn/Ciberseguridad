@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consejos de Ciberseguridad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #AEC6CF;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #5D9CEC;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #41729F;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            max-width: 400px;
+        }
+        footer {
+            background-color: #5D9CEC;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Consejos de Ciberseguridad</h1>
+    </header>
+    <nav>
+        <a href="ciberseguridad.html">Inicio</a>
+        <a href="amenazas.html">Amenazas</a>
+        <a href="identificacion.html">Identificacion</a>
+        <a href="test.html">Test</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <section id="consejos">
+        <h2>Consejos Básicos de Ciberseguridad</h2>
+        <p>La ciberseguridad es esencial para proteger nuestra información personal y profesional.</p>
+        <br>    
+        1. No respondas e-mails sospechosos
+        <ul>
+            <li>No accedas a links desconocidos.</li>
+            <li>Cada vez es más difícil distinguir los correos electrónicos reales de los falsos. En lugar de hacer circular correos electrónicos masivos que están llenos de errores tipográficos, 
+                <br>
+                los correos electrónicos de phishing se adaptan al destinatario. Para lograrlo, los estafadores buscan en Google información sobre esta persona y endulzan el correo electrónico 
+                <br>
+                halagando el ego del destinatario.</li>
+        </ul>
+            <br>
+            <br>
+            2. No compartas tus contraseñas.
+        <ul>
+            <li> Manteen tus contraseñas seguras.</li>
+            <li> Puedes usar una caja fuerte de contraseñas con una contraseña maestra, que genera automáticamente contraseñas seguras. Siempre que sea posible, cambia a la autenticación de dos factores,
+                <br>
+                que ya es obligatoria para la banca en línea. Los expertos en seguridad son cada vez más críticos con esta táctica, porque los usuarios tienden a usar contraseñas que son fáciles de recordar
+                <br>
+                y están numeradas consecutivamente.
+    </ul>
+    <br>
+    <br>
+    3. Realiza respaldos de forma periódica.
+        <ul>
+            <li> No accedas a links desconocidos. </li>
+            <li> A veces sucede que haces click descuidadamente en un archivo adjunto con ransomware y ahora la PC está bloqueada y los hackers informáticos exigen un rescate por desbloquearlo. No hay problema,
+                <br>
+                solo restablece la PC a la configuración de fábrica y recupera todos los datos con la copia de seguridad.
+        </ul>
+        <center>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/zpuDDcrZOS8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </center>
+    </section>
+    <section id="herramientas">
+        <h2>Herramientas Utiles</h2>
+        <p>Para mejorar tu ciberseguridad considera usar estas herramientas:</p>
+        <ul>
+            <li><strong>Gestores de contraseñas:</strong> Ayuda a crear y almacenar contraseñas seguras.</li>
+            <li><strong>Antivirus:</strong> Protegen tus dispositivos conra el malware. </li>
+            <li><strong>VPN:</strong> Cifra tu conexión a internet para mayor privacidad. </li>
+        </ul>
+    </section>
+    <section id="amenazas">
+        <h2>Tipos de Amenazas Comunes</h2>
+        <p>Existen diversas amenazas en línea que debes conocer para protegerte. Estas son algunas de las más comunes:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Amenaza</th>
+                    <th>Descripción</th>
+                    <th>Cómo protegerte</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Phishing</td>
+                    <td>Intentos de engaño para robar información personal.</td>
+                    <td>No hagas clic en enlaces sospechosos.</td>
+                </tr>
+                <tr>
+                    <td>Malware</td>
+                    <td>Software malicioso que puede dañar tus dispositivos.</td>
+                    <td>Instala un antivirus confiable.</td>
+                </tr>
+                <tr>
+                    <td>Ransomware</td>
+                    <td>Secuestra tus datos y exige un rescate.</td>
+                    <td>Realiza copias de seguridad frecuentes.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+<footer>
+<p> SeguridadDigital.mx </p>
+</footer>
+<script>
+    const header = document.querySelector("header h1");
+    header.style.opacity = "0";
+    header.style.transition = "opacity 2s";
+
+    window.addEventListener("load", () => {
+        header.style.opacity = "1";
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Amenazas Cibernéticas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #AEC6CF;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #5D9CEC;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #41729F;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            max-width: 400px;
+        }
+        footer {
+            background-color: #5D9CEC;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tipos de Amenazas Cibernéticas</h1>
+    </header>
+    <nav>
+        <a href="ciberseguridad.html">Inicio</a>
+        <a href="consejos.html">Consejos</a>
+        <a href="identificacion.html">Identificacion</a>
+        <a href="test.html">Test</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <section id="phishing">
+        <h2>Phishing</h2>
+        <p>El phishing es una técnica de ingeniería social que consiste en el envío de mensajes fraudulentos para robar información personal o bancaria. Los ciberdelincuentes se hacen pasar por entidades
+            <br>
+            legítimas, como instituciones públicas, bancos o redes sociales, para obtener datos confidenciales.</p>
+        <img src="D:\CIBERSEGURIDAD\phsi.jpeg" alt="Ejemplo de Phishing">
+        <table>
+            <thead>
+                <tr>
+                    <th>Amenazas</th>
+                    <th>Ejemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Enlace sospechoso</td>
+                    <td>www.banco-falso.com</td>
+                </tr>
+                <tr>
+                    <td>Mensajes urgentes</td>
+                    <td>"¡Tu cuenta será bloqueada!"</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="malware">
+        <h2>Malware</h2>
+        <p>El software malicioso, o malware, es cualquier código de software o programa informático, incluidos ransomware, troyanos y gusanos, escrito intencionalmente para dañar los sistemas 
+            <br>
+            informáticos o a sus usuarios. Casi todos los ciberataques modernos implican algún tipo de malware.
+            <br>
+            El malware causa daños a través de virus informáticos. Si no cuentas con seguridad en Internet, tus computadoras, redes, dispositivos móviles y datos pueden verse afectados.</p>
+        <img src="D:\CIBERSEGURIDAD\mal.jpeg" alt="Ejemplo de Malware">
+        <ul>
+            <li><strong>Virus:</strong> Infecta archivos y los daña.</li>
+            <li><strong>Troyanos:</strong> Se hacen pasar por programas legítimos.</li>
+            <li><strong>Gusanos:</strong> Se propagan automáticamente entre dispositivos.</li>
+        </ul>
+    </section>
+    <section id="ransomware">
+        <h2>Ransomware</h2>
+        <p>El ransomware secuestra tus datos y exige un pago (rescate) para devolver el acceso. Puede afectar tanto a individuos como a empresas.
+        <br>
+        Estas son algunas señales que permiten detectar un ataque de ransomware: Alertas del antivirus. La aplicación antivirus del dispositivo (si nada ni nadie la ha deshabilitado) 
+            <br>
+            puede ser la primera en detectar una infección de ransomware. Cambios en las extensiones de los archivos.</p>
+        <img src="D:\CIBERSEGURIDAD\candado.jpeg" alt="Ejemplo de Ransomware">
+        <br>
+        <br>     
+        <p><strong>Consejo:</strong> Realiza copias de seguridad regularmente y no pagues el rescate, ya que no garantiza la recuperación de los datos.</p>
+    </section>
+    <section id="spyware">
+        <h2>Spyware</h2>
+        <p>El spyware es un software malicioso que se instala en un dispositivo sin el consentimiento del usuario para recopilar información y enviarla a terceros. Puede rastrear acciones 
+            <br>
+            como pulsaciones de teclado, hábitos de navegación, capturas de pantalla y grabación de audio y vídeo.
+        <br>
+            <br>   
+        El spyware puede instalarse en un dispositivo de varias maneras, como: 
+            <lu>
+                <li>
+                    En un archivo adjunto malicioso en un correo electrónico
+                    <li>
+                        En un sitio web vulnerado
+                        <li>
+                            En un programa que el usuario descarga e instala intencionalmente</p>
+        <img src="D:\CIBERSEGURIDAD\capucha.jpeg" alt="Ejemplo de Spyware">
+    </section>
+<footer>
+<p> SeguridadDigital.mx </p>
+</footer>
+<script>
+    const header = document.querySelector("header h1");
+    header.style.opacity = "0";
+    header.style.transition = "opacity 2s";
+
+    window.addEventListener("load", () => {
+        header.style.opacity = "1";
+    });
+</script>
+    <script>
+        // Si quieres aplicar las clases fade-in dinámicamente a las imágenes:
+        const images = document.querySelectorAll('.fade-in');
+        images.forEach((img, index) => {
+            img.style.animationDelay = `${index * 0.5}s`;
+        });
+    </script>
+</body>
+</html>
